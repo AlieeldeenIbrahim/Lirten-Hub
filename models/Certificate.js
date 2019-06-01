@@ -19,7 +19,7 @@ const CertificateSchema = new Schema({
         required: true
     },
     //user that requested this certificate
-    issuedBy: {
+    issued_by: {
         type: String,
         required: true
     },

@@ -4,21 +4,24 @@ const Schema = mongoose.Schema
 //Create the schema
 const ApplicationSchema = new Schema(
 {
-    user: {//takes user id
+    //user applicant
+    user: {
         type: String, 
         required: true  
     },
-    task:{//takes task id
+    //applied task
+    task:{
         type: String,
         required: true
     },
-    description:{//takes task id
+    //description of the task
+    description:{
         type: String,
         required: true
     },
-    date:{//date of creation
-        type: Date,
-        //default: Date.now()
+    //date of creation
+    date:{
+        type: Date
     }
 })
 
